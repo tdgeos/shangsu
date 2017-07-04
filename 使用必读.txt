@@ -97,7 +97,7 @@ fid与gid共用一个排列顺序。。
 
 进入此目录
 sky/install/index.php
-安装尚素天空
+安装许愿天空
 
 天空安装须知
 新用户注册地址http://完整域名/forum/member.php?mod=register

@@ -1,12 +1,7 @@
  <!DOCTYPE html> 
 <html> 
 <head> 
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="Content-Language" content="zh-CN" />
-<meta name="author" content="Powerless" /> 
-<meta name="Copyright" content="北京思行伟业数码科技有限公司" /> 
-<meta name="description" content="尚素网是北京思行伟业数码科技有限公司推出的一款公益型素食网站" /> 
-<meta name="keywords" content="尚素网、素食" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
 <title>尚素网|手机客户端|素食者的首选网站</title> 
 <link rel="shortcut icon" href="images/ym/logo_s.gif" type="image/x-icon" />
 <link href="css/allstyle.css" rel="stylesheet" type="text/css" />
@@ -96,7 +91,7 @@
 </ul>
 </li>
 <li><a href="forum/"target="_blank">尚素论坛</a></li>
-<li><a href="sky/"target="_blank">尚素天空</a></li>
+<li><a href="sky"target="_blank">许愿天空</a></li>
 <li class="frest"><a href="phone.php"class="active">手机客户端</a></li>
 </ul> 
  </nav>
@@ -184,7 +179,7 @@ $(function(){
 	</div> 
 	<div class="mp_mphone mp_div" style="display:none;"> 
 		<div class="mp_iframe"> 
-		 <iframe width="248" height="409" frameborder="0" class="mobile-sim" src="http://www.tdgeos.com/shangsu/forum/misc.php?mod=mobile&amp"></iframe> 
+		 <iframe width="248" height="409" frameborder="0" class="mobile-sim" src="http://localhost/shang/forum/misc.php?mod=mobile&amp"></iframe> 
 	    </div> 
 	</div> 
 </div> 

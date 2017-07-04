@@ -79,7 +79,7 @@
 </ul>
 </li>
 <li><a href="../forum/index.php"target="_blank">尚素论坛</a></li>
-<li><a href="../sky/index.php"target="_blank">尚素天空</a></li>
+<li><a href="../sky/index.php"target="_blank">许愿天空</a></li>
 <li><a href="../phone.php">手机客户端</a></li>
 </ul> 
  </nav>

@@ -5,10 +5,6 @@ require_once("My_SQL/_My_SQL_link_All.php");
 <html> 
 <head> 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
-<meta http-equiv="Content-Language" content="zh-CN" />
-<meta name="author" content="Powerless" /> 
-<meta name="Copyright" content="北京思行伟业数码科技有限公司" /> 
-<meta name="description" content="尚素网是北京思行伟业数码科技有限公司推出的一款公益型素食网站" /> 
 <title>尚素网|素食者的首选网站</title> 
 <link rel="shortcut icon" href="images/ym/logo_s.gif" type="image/x-icon" /> 
 <link href="css/allstyle.css" rel="stylesheet" type="text/css" />
@@ -101,7 +97,7 @@ require_once("My_SQL/_My_SQL_link_All.php");
 </ul>
 </li>
 <li><a href="forum/"target="_blank">尚素论坛</a></li>
-<li><a href="sky/"target="_blank">尚素天空</a></li>
+<li><a href="sky/"target="_blank">许愿天空</a></li>
 <li><a href="phone.php">手机客户端</a></li>
 </ul>
 </nav>
@@ -112,26 +108,19 @@ require_once("My_SQL/_My_SQL_link_All.php");
                      	<div class="slide"> 
 						<div class="sliderContent">
 <?php
+/* 在 HTML 中打印结果 */
 $number = 5;
-$thread_sql = "SELECT `fid`,`tid`,`attachment` FROM `ss_forum_thread` order by fid desc";
-$thread_sql_result = mysql_query($thread_sql) or die("查询失败!");
-while($thread_row = mysql_fetch_array($thread_sql_result))
+$sql = "SELECT `subject`, `message`, `first` ,`fid` ,`tid`FROM `ss_forum_post` order by tid desc";
+$result = mysql_query($sql) or die("查询失败!");
+while ($row=mysql_fetch_array($result)) 
+{if ($row['fid'] ==99&&$number != 0&&$row['first'] !=0)
 {
-	$thread_Tid = $thread_row['tid'];
-	$threadimage_sql = "SELECT `tid`,`attachment` FROM `ss_forum_threadimage` order by tid = '$thread_Tid' desc";
-	$threadimage_sql_result = mysql_query($threadimage_sql) or die("查询失败!");
-	$threadimage_row=mysql_fetch_array($threadimage_sql_result);
-		if ($thread_row['fid'] ==99&&$number != 0)
-		{
-			echo"<div class='item'> ";
-			echo"<img width='340' height='360'src=forum/data/attachment/forum/",$threadimage_row['attachment'],">";
-			echo"</div>";
-			$number--;
-		}
-}
-
-mysql_free_result($threadimage_sql_result);
-mysql_free_result($thread_sql_result);
+echo"<div class='item'> ";
+echo str_replace("[/img]"," />",str_replace("[img]","<img width='340' height='360'src=",$row['message']));
+echo"</div>";
+$number--;
+}}
+mysql_free_result($result);
 ?>
                         </div>
                     </div>
@@ -165,7 +154,7 @@ while ($row=mysql_fetch_array($result))
 if ($row['fid'] >=45&&$row['fid'] <=62&&$number != 0&&$row['first'] !=0)
 {?>
 <tr>
-<a href="forum/forum.php?mod=viewthread&tid=<?php echo $row['tid'];?>"target="_blank"><h1>
+<a href="content.php?tid=<?php echo $row['tid'];?>"target="_blank"><h1>
 <?php echo mb_substr($row['subject'],0,16,'utf-8');$number--;?></h1></a>
 <h4>
 <?php echo mb_substr($row['message'],0,60,'utf-8');?></h4>
@@ -182,7 +171,7 @@ mysql_free_result($result);
 <script charset="Shift_JIS" src="js/honehone_clock.js"></script>
 
 <td vAlign=top align=left width="155">
-<div style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; OVERFLOW: hidden; PADDING-TOP: -20px; HEIGHT: 186px">
+<div style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; OVERFLOW: hidden; PADDING-TOP: -20px; HEIGHT: 216px">
 <MARQUEE onmouseover="this.stop();" onmouseout="this.start();" scrollAmount="1" scrollDelay="1" direction="up">
 <?php
 $sql = "SELECT `subject`,`author`,`authorid`,`tid`,`fid` FROM `ss_forum_thread` order by tid desc";
@@ -209,16 +198,17 @@ while($row=mysql_fetch_array($result))
                 <div class="container3"><h2>健康资讯</h2></div>
                         <div class="subContainer eheight  subContainerpading clearfix">
                         <table border="0" width="245" cellspacing="1" align="left">
+                        <br>
 <?php
 $sql = "SELECT `subject`,`fid`,`tid` FROM `ss_forum_thread` order by tid desc";
 $result = mysql_query($sql) or die("查询失败!");
 /* 在 HTML 中打印结果 */
-$number = 12;
+$number = 13;
 while ($row=mysql_fetch_array($result)) 
 {
 if ($row['fid'] >=45&&$row['fid'] <=50&&$number != 0)
 {?>
-<a href="forum/forum.php?mod=viewthread&tid=<?php echo $row['tid'];?>"target="_blank"><h3>
+<a href="content.php?tid=<?php echo $row['tid'];?>"target="_blank"><h3>
 <?php echo '　• ',mb_substr($row['subject'],0,11,'utf-8');$number--;?></h3></a>
 <?php
 }}mysql_free_result($result);
@@ -233,16 +223,17 @@ if ($row['fid'] >=45&&$row['fid'] <=50&&$number != 0)
                 <div class="container33"></div>
                         <div class="subContainer eheight  subContainerpading clearfix">
                         <table border="0" width="245" cellspacing="1" align="left">
+                        <br>
 <?php
 $sql = "SELECT `subject`,`fid`,`tid` FROM `ss_forum_thread` order by tid desc";
 $result = mysql_query($sql) or die("查询失败!");
 /* 在 HTML 中打印结果 */
-$number = 12;
+$number = 13;
 while ($row=mysql_fetch_array($result)) 
 {
 if ($row['fid'] >=51&&$row['fid'] <=56&&$number != 0)
 {?>
-<a href="forum/forum.php?mod=viewthread&tid=<?php echo $row['tid'];?>"target="_blank"><h3>
+<a href="content.php?tid=<?php echo $row['tid'];?>"target="_blank"><h3>
 <?php echo '　• ',mb_substr($row['subject'],0,11,'utf-8');$number--;?></h3></a>
 <?php
 }}mysql_free_result($result);
@@ -268,12 +259,12 @@ $result = mysql_query($sql) or die("查询失败!");
 $number = 2;
 while ($row=mysql_fetch_array($result)) 
 {
-if ($row['fid'] ==100&&$row['first'] !=0)
+ if ($row['fid'] ==100&&$row['first'] !=0)
 $mes = $row['message'];
 if ($row['fid'] >=57&&$row['fid'] <=68&&$number != 0&&$row['first'] !=0)
 {echo str_replace("[/img]"," />",str_replace("[img]","<img class='venuelist-front_w2' width='100' height='100'src=",$mes));?>
 <p class="recommend-text_w2">
-<a href="forum/forum.php?mod=viewthread&tid=<?php echo $row['tid'];?>"target="_blank"><h1>
+<a href="content.php?tid=<?php echo $row['tid'];?>"target="_blank"><h1>
 <?php 
 echo mb_substr($row['subject'],0,16,'utf-8');$number--;?></h1></a><h4>
 <?php echo mb_substr($row['message'],0,136,'utf-8');?></h4></p>
@@ -290,28 +281,18 @@ echo mb_substr($row['subject'],0,16,'utf-8');$number--;?></h1></a><h4>
                         <div class="subContainer eheight subContainerpading clearfix">
                         <table border="0" width="490" cellspacing="1" align="left">
 <br/>
-
 <?php
+$sql = "SELECT `subject`, `message`, `first` ,`fid` ,`tid`FROM `ss_forum_post` order by tid desc";
+$result = mysql_query($sql) or die("查询失败!");
+/* 在 HTML 中打印结果 */
 $number = 2;
-$thread_sql = "SELECT `fid`,`tid`,`message`,`attachment` FROM `ss_forum_post` order by fid desc";
-$thread_sql_result = mysql_query($thread_sql) or die("查询失败1!");
-while($thread_row = mysql_fetch_array($thread_sql_result))
+while ($row=mysql_fetch_array($result)) 
 {
-	$thread_Tid = $thread_row['tid'];
-	$threadimage_sql = "SELECT `tid`,`attachment` FROM `ss_forum_threadimage` order by tid = '$thread_Tid' desc";
-	$threadimage_sql_result = mysql_query($threadimage_sql) or die("查询失败2!");
-	$threadimage_row=mysql_fetch_array($threadimage_sql_result);
-		if ($thread_row['fid'] ==101&&$number != 0)
-		{
-			echo "<img width='220' height='240' src=forum/data/attachment/forum/",$threadimage_row['attachment'],">";
-			echo $thread_row['message'];
-			$number--;
-		}
-}
-
-mysql_free_result($threadimage_sql_result);
-mysql_free_result($thread_sql_result);
-
+if ($row['fid'] ==101&&$row['first'] !=0&&$number != 0)
+{
+$mes = $row['message'];
+echo str_replace("[/img]"," />",str_replace("[img]","<img width='220' height='240'src=",$mes));$number--;echo "　";
+}}mysql_free_result($result);
 ?>
 </table>
 </div>
@@ -365,24 +346,21 @@ mysql_free_result($result);
                      <div class="subContainer eheight">
                      <table border="0" width="160" cellspacing="1" align="left">
 <?php
-$sql_members = "SELECT `username` ,`uid`  FROM `ss_ucenter_members`";
-$sql_members_result = mysql_query($sql_members) or die("查询失败!");
-$sql_count = "SELECT `uid`,`threads`  FROM `ss_common_member_count` order by threads desc";
-$sql_count_result = mysql_query($sql_count) or die("查询失败!");
+$sql_ = "SELECT `username` ,`uid`  FROM `ss_ucenter_members`";
+$result_ = mysql_query($sql_) or die("查询失败!");
+$sql = "SELECT `uid`,`posts`  FROM `ss_common_member_count` order by posts desc";
+$result = mysql_query($sql) or die("查询失败!");
 $number = 8;
-while ($sql_members_row = mysql_fetch_array($sql_members_result))
-{ $sql_count_row=mysql_fetch_array($sql_count_result);
-	if ($number != 0 && $sql_count_row['uid'] == $sql_members_row['uid'])
-	{?>
- 	<img width="30" height="30" src="forum/uc_server/avatar.php?uid=<?php echo $sql_count_row['uid'];?>&size=middle"/>
-    <a href="forum/?<?php echo $sql_count_row['uid'];?>"target="_blank">
-		<?php echo substr($sql_members_row['username'],0,15); $number--;?>
-    </a><br>
+while ($row_=mysql_fetch_array($result_))
+{ $row=mysql_fetch_array($result);
+	if ($number != 0&&$row['uid'] == $row_['uid']){?>
+ 	<img width="30" height="30" src="forum/uc_server/avatar.php?uid=<?php echo $row['uid'];?>&size=middle"/>
+    <a href="forum/?<?php echo $row['uid'];?>"target="_blank">
+		<?php echo substr($row_['username'],0,15); $number--;?></a><br>
 <?php
-	}
-}
-mysql_free_result($sql_count_result);
-mysql_free_result($sql_members_result);
+}}
+mysql_free_result($result);
+mysql_free_result($result_);
 ?>
 </table>
                     </div>

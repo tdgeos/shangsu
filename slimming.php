@@ -6,10 +6,6 @@ require_once("My_SQL/_My_SQL_link_All.php");
 <html> 
 <head> 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
-<meta http-equiv="Content-Language" content="zh-CN" />
-<meta name="author" content="Powerless" /> 
-<meta name="Copyright" content="北京思行伟业数码科技有限公司" /> 
-<meta name="description" content="尚素网是北京思行伟业数码科技有限公司推出的一款公益型素食网站" /> 
 <title>尚素网|美容瘦身|素食者的首选网站</title>
 <link rel="shortcut icon" href="images/ym/logo_s.gif" type="image/x-icon" /> 
 <link href="css/allstyle.css" rel="stylesheet" type="text/css" />
@@ -95,7 +91,7 @@ require_once("My_SQL/_My_SQL_link_All.php");
 </ul>
 </li>
 <li><a href="forum/"target="_blank">尚素论坛</a></li>
-<li><a href="sky/"target="_blank">尚素天空</a></li>
+<li><a href="sky"target="_blank">许愿天空</a></li>
 <li><a href="phone.php">手机客户端</a></li>
 </ul> 
  </nav>

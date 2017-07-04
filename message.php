@@ -6,10 +6,6 @@ require_once("My_SQL/_My_SQL_link_All.php");
 <html> 
 <head> 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
-<meta http-equiv="Content-Language" content="zh-CN" />
-<meta name="author" content="Powerless" /> 
-<meta name="Copyright" content="北京思行伟业数码科技有限公司" /> 
-<meta name="description" content="尚素网是北京思行伟业数码科技有限公司推出的一款公益型素食网站" /> 
 <title>尚素网|资讯|素食者的首选网站</title>
 <link rel="shortcut icon" href="images/ym/logo_s.gif" type="image/x-icon" /> 
 <link href="css/allstyle.css" rel="stylesheet" type="text/css" />
@@ -95,7 +91,7 @@ require_once("My_SQL/_My_SQL_link_All.php");
 </ul>
 </li>
 <li><a href="forum/"target="_blank">尚素论坛</a></li>
-<li><a href="sky/"target="_blank">尚素天空</a></li>
+<li><a href="sky"target="_blank">许愿天空</a></li>
 <li><a href="phone.php">手机客户端</a></li>
 </ul> 
  </nav>
@@ -165,7 +161,7 @@ while ($row=mysql_fetch_array($result))
 if ($row['fid'] ==45 &&$number != 0)
 {?>
 <tr>
-<td><a href="forum/forum.php?mod=viewthread&tid=<?php echo $row['tid'];?>"target="_blank"><h3>
+<td><a href="content.php?tid=<?php echo $row['tid'];?>"target="_blank"><h3>
 <?php echo $row['subject'];$number--;?></h3></a></td>
 <td><a href="forum/?<?php echo $row['authorid'];?>"target="_blank"><h3>
 <?php echo $row['author'];?></h3></a></td>
@@ -192,7 +188,7 @@ while ($row=mysql_fetch_array($result))
 if ($row['fid'] ==46 &&$number != 0)
 {?>
 <tr>
-<td><a href="forum/forum.php?mod=viewthread&tid=<?php echo $row['tid'];?>"target="_blank"><h3>
+<td><a href="content.php?tid=<?php echo $row['tid'];?>"target="_blank"><h3>
 <?php echo $row['subject'];$number--;?></h3></a></td>
 <td><a href="forum/?<?php echo $row['authorid'];?>"target="_blank"><h3>
 <?php echo $row['author'];?></h3></a></td>
@@ -220,7 +216,7 @@ while ($row=mysql_fetch_array($result))
 if ($row['fid'] ==47 &&$number != 0)
 {?>
 <tr>
-<td><a href="forum/forum.php?mod=viewthread&tid=<?php echo $row['tid'];?>"target="_blank"><h3>
+<td><a href="content.php?tid=<?php echo $row['tid'];?>"target="_blank"><h3>
 <?php echo $row['subject'];$number--;?></h3></a></td>
 <td><a href="forum/?<?php echo $row['authorid'];?>"target="_blank"><h3>
 <?php echo $row['author'];?></h3></a></td>
@@ -247,7 +243,7 @@ while ($row=mysql_fetch_array($result))
 if ($row['fid'] ==48 &&$number != 0)
 {?>
 <tr>
-<td><a href="forum/forum.php?mod=viewthread&tid=<?php echo $row['tid'];?>"target="_blank"><h3>
+<td><a href="content.php?tid=<?php echo $row['tid'];?>"target="_blank"><h3>
 <?php echo $row['subject'];$number--;?></h3></a></td>
 <td><a href="forum/?<?php echo $row['authorid'];?>"target="_blank"><h3>
 <?php echo $row['author'];?></h3></a></td>
@@ -275,7 +271,7 @@ while ($row=mysql_fetch_array($result))
 if ($row['fid'] ==49 &&$number != 0)
 {?>
 <tr>
-<td><a href="forum/forum.php?mod=viewthread&tid=<?php echo $row['tid'];?>"target="_blank"><h3>
+<td><a href="content.php?tid=<?php echo $row['tid'];?>"target="_blank"><h3>
 <?php echo $row['subject'];$number--;?></h3></a></td>
 <td><a href="forum/?<?php echo $row['authorid'];?>"target="_blank"><h3>
 <?php echo $row['author'];?></h3></a></td>
@@ -302,7 +298,7 @@ while ($row=mysql_fetch_array($result))
 if ($row['fid'] ==50 &&$number != 0)
 {?>
 <tr>
-<td><a href="forum/forum.php?mod=viewthread&tid=<?php echo $row['tid'];?>"target="_blank"><h3>
+<td><a href="content.php?tid=<?php echo $row['tid'];?>"target="_blank"><h3>
 <?php echo $row['subject'];$number--;?></h3></a></td>
 <td><a href="forum/?<?php echo $row['authorid'];?>"target="_blank"><h3>
 <?php echo $row['author'];?></h3></a></td>
@@ -334,7 +330,7 @@ while ($row=mysql_fetch_array($result))
 if ($row['fid'] ==45 &&$number != 0)
 {?>
 <tr>
-<td><a href="forum/forum.php?mod=viewthread&tid=<?php echo $row['tid'];?>"target="_blank"><h3>
+<td><a href="content.php?tid=<?php echo $row['tid'];?>"target="_blank"><h3>
 <?php echo $row['subject'];$number--;?></h3></a></td>
 <td><a href="forum/?<?php echo $row['authorid'];?>"target="_blank"><h3>
 <?php echo $row['author'];?></h3></a></td>
@@ -367,7 +363,7 @@ while ($row=mysql_fetch_array($result))
 if ($row['fid'] ==46 &&$number != 0)
 {?>
 <tr>
-<td><a href="forum/forum.php?mod=viewthread&tid=<?php echo $row['tid'];?>"target="_blank"><h3>
+<td><a href="content.php?tid=<?php echo $row['tid'];?>"target="_blank"><h3>
 <?php echo $row['subject'];$number--;?></h3></a></td>
 <td><a href="forum/?<?php echo $row['authorid'];?>"target="_blank"><h3>
 <?php echo $row['author'];?></h3></a></td>
@@ -399,7 +395,7 @@ while ($row=mysql_fetch_array($result))
 if ($row['fid'] ==47 &&$number != 0)
 {?>
 <tr>
-<td><a href="forum/forum.php?mod=viewthread&tid=<?php echo $row['tid'];?>"target="_blank"><h3>
+<td><a href="content.php?tid=<?php echo $row['tid'];?>"target="_blank"><h3>
 <?php echo $row['subject'];$number--;?></h3></a></td>
 <td><a href="forum/?<?php echo $row['authorid'];?>"target="_blank"><h3>
 <?php echo $row['author'];?></h3></a></td>
@@ -431,7 +427,7 @@ while ($row=mysql_fetch_array($result))
 if ($row['fid'] ==48 &&$number != 0)
 {?>
 <tr>
-<td><a href="forum/forum.php?mod=viewthread&tid=<?php echo $row['tid'];?>"target="_blank"><h3>
+<td><a href="content.php?tid=<?php echo $row['tid'];?>"target="_blank"><h3>
 <?php echo $row['subject'];$number--;?></h3></a></td>
 <td><a href="forum/?<?php echo $row['authorid'];?>"target="_blank"><h3>
 <?php echo $row['author'];?></h3></a></td>
@@ -463,7 +459,7 @@ while ($row=mysql_fetch_array($result))
 if ($row['fid'] ==49 &&$number != 0)
 {?>
 <tr>
-<td><a href="forum/forum.php?mod=viewthread&tid=<?php echo $row['tid'];?>"target="_blank"><h3>
+<td><a href="content.php?tid=<?php echo $row['tid'];?>"target="_blank"><h3>
 <?php echo $row['subject'];$number--;?></h3></a></td>
 <td><a href="forum/?<?php echo $row['authorid'];?>"target="_blank"><h3>
 <?php echo $row['author'];?></h3></a></td>
@@ -495,7 +491,7 @@ while ($row=mysql_fetch_array($result))
 if ($row['fid'] ==50 &&$number != 0)
 {?>
 <tr>
-<td><a href="forum/forum.php?mod=viewthread&tid=<?php echo $row['tid'];?>"target="_blank"><h3>
+<td><a href="content.php?tid=<?php echo $row['tid'];?>"target="_blank"><h3>
 <?php echo $row['subject'];$number--;?></h3></a></td>
 <td><a href="forum/?<?php echo $row['authorid'];?>"target="_blank"><h3>
 <?php echo $row['author'];?></h3></a></td>

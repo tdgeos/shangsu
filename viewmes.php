@@ -5,10 +5,6 @@ require_once("My_SQL/_My_SQL_link_All.php");//引用数据库链接文
 <html> 
 <head> 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
-<meta http-equiv="Content-Language" content="zh-CN" />
-<meta name="author" content="Powerless" /> 
-<meta name="Copyright" content="北京思行伟业数码科技有限公司" /> 
-<meta name="description" content="尚素网是北京思行伟业数码科技有限公司推出的一款公益型素食网站" /> 
 <title>尚素网|<?php
 $id=$_GET['tid'];
 $sql = "SELECT `subject`,`tid`  FROM `ss_forum_thread` where tid='$id'";
@@ -108,7 +104,7 @@ mysql_free_result($result);
 </ul>
 </li>
 <li><a href="forum/"target="_blank">尚素论坛</a></li>
-<li><a href="sky"target="_blank">尚素天空</a></li>
+<li><a href="sky"target="_blank">许愿天空</a></li>
 <li><a href="phone.php">手机客户端</a></li>
 </ul> 
  </nav>

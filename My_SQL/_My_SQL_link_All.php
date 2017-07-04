@@ -1,5 +1,5 @@
 ﻿<?php
- $link=MySQL_connect('localhost','tdgeos','tdgeos');//连接MySQL
+ $link=MySQL_connect('localhost','root','');//连接MySQL
  mysql_select_db('shangsu');
  mysql_query('set names utf8');
 	if (!$link)

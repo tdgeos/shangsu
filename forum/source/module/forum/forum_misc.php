@@ -204,7 +204,7 @@ if($_GET['action'] == 'paysucceed') {
 	if($type == 'file' && !$_G['group']['allowpostattach']) {
 		showmessage('no_privilege_postattach');
 	}
-	include template('forum');
+	include template('forum/upload');
 
 } elseif($_GET['action'] == 'comment') {
 
