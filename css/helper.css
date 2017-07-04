@@ -1,0 +1,7 @@
+/*position:relative; 次属性会将所在样式绘制于最上层*/
+#content .item-container .bd .o-item-con{width:350px;height:74px;float:left;border:1px solid #CFC;margin-right:5px;margin-top:5px;display:inline;}
+#content .item-container .bd .subtitle{color:#36C;font-size:14px;}
+#content .item-container .bd .item-icon{background:url(../images/icon_ceshi.jpg) left top;display:block;width:64px;height:64px;}
+#content .item-container .bd .item-icon-wraper{float:left;display:inline;margin:5px 6px 9px;}
+#content .item-container .bd .des-content{float:left;padding-top:9px;display:block;width:220px;overflow:hidden;height:63px;}
+#content .item-container .bd .k{display:block;font-size:16px;color:#60C;padding-bottom:2px;font-family:微软雅黑;}

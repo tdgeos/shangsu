@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<config>
+		<poweredby>Flexsns.com,adopt-the-sky</poweredby>
+		<skinName>默认皮肤</skinName>
+		<dayBg>day.jpg</dayBg>
+		<nightBg>night.jpg</nightBg>
+	</config>

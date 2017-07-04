@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sky author="池晓生" email="chixiaosheng05@163.com"	qq="255979" >
+    <config>
+		<skin>
+			<skinDIR>./sky/skin/default/</skinDIR>
+			<skinLogo>./skin/default/logo.png</skinLogo>
+			<skinMainFile>./skin/default/default.swf</skinMainFile>
+			<showUserInfo>1</showUserInfo>
+			
+		<poweredby>Flexsns.com,adopt-the-sky</poweredby>
+		<skinName>默认皮肤</skinName>
+		<dayBg>day.jpg</dayBg>
+		<nightBg>night.jpg</nightBg>
+	
+		</skin>
+		
+		<skyUrl>http://127.0.0.1/shang4.0/sky/</skyUrl>
+		<spaceUrl></spaceUrl>
+		<regUrl></regUrl>
+		<websiteUrl>http://127.0.0.1/shang4.0/index.php</websiteUrl>
+		
+		<daySound>
+			<sound>./sky/media/sound/day.mp3</sound>
+		</daySound>
+		<nightSound>
+			<sound>./sky/media/sound/night.mp3</sound>
+		</nightSound>
+		
+		<defaultUserHead>./sky/default.gif</defaultUserHead>
+		
+		<maxItems>100</maxItems>
+		<myBoxPerPage>8</myBoxPerPage>
+		<replysPerPage>8</replysPerPage>
+		
+		<autoFillItem>1</autoFillItem>
+		<resizeArray>0.5,0.7,0.7,0.8,0.7,0.6</resizeArray>
+		<defaultContent>赶快发送你的愿望到天空中来吧</defaultContent>
+		<maxItemContentWords>60</maxItemContentWords>
+		<maxReplyContentWords>100</maxReplyContentWords>
+		<minItemContentWords>5</minItemContentWords>
+		<minReplyContentWords>5</minReplyContentWords>
+		<itemPostTimeLimit>30</itemPostTimeLimit>
+		<replyPostTimeLimit>30</replyPostTimeLimit>
+		
+		<requestMarkerNums>20</requestMarkerNums>
+		<requestSuccessStr>success</requestSuccessStr>
+		<requestFailedStr>failed</requestFailedStr>
+
+
+		<leftPadding>50</leftPadding>
+		<rightPadding>50</rightPadding>
+
+		<topPadding>30</topPadding>
+		<bottomPadding>30</bottomPadding>
+
+		<skyBroadcastLoop>3</skyBroadcastLoop>
+		<skyBroadcastTimer>6</skyBroadcastTimer>
+		
+		<maxDiggPertime>3</maxDiggPertime>
+		<leftPanelStatus>5</leftPanelStatus>
+		
+		<debugMode>0</debugMode>
+    </config>
+</sky>

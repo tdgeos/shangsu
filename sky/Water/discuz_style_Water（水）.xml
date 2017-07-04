@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Style]]></item>
+	<item id="Version"><![CDATA[7.2]]></item>
+	<item id="Time"><![CDATA[2009-11-26 23:12]]></item>
+	<item id="From"><![CDATA[´´ÒâÌì¿Õ¹Ù·½ÂÛÌ³ (http://www.intesky.cn/)]]></item>
+	<item id="Data">
+		<item id="name"><![CDATA[Water£¨Ë®£©]]></item>
+		<item id="templateid"><![CDATA[12]]></item>
+		<item id="tplname"><![CDATA[Water]]></item>
+		<item id="directory"><![CDATA[./templates/water]]></item>
+		<item id="copyright"><![CDATA[´´ÒâÌì¿Õ·ÂÖÆ,°æÈ¨¹é×÷ÕßËùÓÐ]]></item>
+		<item id="style">
+			<item id="noticetext"><![CDATA[#88BE00]]></item>
+			<item id="interleavecolor"><![CDATA[#F6FFFF]]></item>
+			<item id="specialbg"><![CDATA[#EBF2F8]]></item>
+			<item id="specialborder"><![CDATA[#bfdef4]]></item>
+			<item id="commonbg"><![CDATA[#F7F7F7]]></item>
+			<item id="commonborder"><![CDATA[#E3EDF5]]></item>
+			<item id="floatmaskbgcolor"><![CDATA[#D1DFEF]]></item>
+			<item id="floatbgcolor"><![CDATA[#F1F5FA]]></item>
+			<item id="dropmenubgcolor"><![CDATA[#FEFEFE]]></item>
+			<item id="dropmenuborder"><![CDATA[#7FCAE2]]></item>
+			<item id="inputbg"><![CDATA[#FFF]]></item>
+			<item id="inputborderdarkcolor"><![CDATA[#6eb1d5]]></item>
+			<item id="inputborder"><![CDATA[#D3E8F2]]></item>
+			<item id="menuhovertext"><![CDATA[#004e83]]></item>
+			<item id="menuhover"><![CDATA[]]></item>
+			<item id="menutext"><![CDATA[#6db1d5]]></item>
+			<item id="menubgcolor"><![CDATA[]]></item>
+			<item id="menuborder"><![CDATA[]]></item>
+			<item id="contentseparate"><![CDATA[#D3E8F2]]></item>
+			<item id="contentwidth"><![CDATA[90%]]></item>
+			<item id="msgbigsize"><![CDATA[16px]]></item>
+			<item id="msgfontsize"><![CDATA[14px]]></item>
+			<item id="wrapbordercolor"><![CDATA[]]></item>
+			<item id="wrapborder"><![CDATA[5]]></item>
+			<item id="wrapbg"><![CDATA[#fff]]></item>
+			<item id="wrapwidth"><![CDATA[970px]]></item>
+			<item id="highlightlink"><![CDATA[#09C]]></item>
+			<item id="link"><![CDATA[#004E83]]></item>
+			<item id="lighttext"><![CDATA[#004e83]]></item>
+			<item id="midtext"><![CDATA[#6db1d5]]></item>
+			<item id="tabletext"><![CDATA[#444]]></item>
+			<item id="smfontsize"><![CDATA[0.83em]]></item>
+			<item id="smfont"><![CDATA[Î¢ÈíÑÅºÚ, Verdana, Helvetica, Arial, sans-serif]]></item>
+			<item id="fontsize"><![CDATA[12px]]></item>
+			<item id="font"><![CDATA[Î¢ÈíÑÅºÚ, Tahoma, Verdana, Helvetica, Arial, sans-serif]]></item>
+			<item id="footertext"><![CDATA[#24548d]]></item>
+			<item id="headertext"><![CDATA[#6db1d5]]></item>
+			<item id="headerbordercolor"><![CDATA[]]></item>
+			<item id="headerborder"><![CDATA[0]]></item>
+			<item id="sidebgcolor"><![CDATA[#e0f0f7 side_bar_bg.png repeat-y right]]></item>
+			<item id="bgcolor"><![CDATA[#8cc8e2]]></item>
+			<item id="headerbgcolor"><![CDATA[]]></item>
+			<item id="stypeid"><![CDATA[1]]></item>
+			<item id="styleimgdir"><![CDATA[./templates/Water/images]]></item>
+			<item id="imgdir"><![CDATA[]]></item>
+			<item id="boardimg"><![CDATA[]]></item>
+			<item id="available"><![CDATA[
+			]]></item>
+		</item>
+		<item id="version"><![CDATA[7.2]]></item>
+	</item>
+</root>

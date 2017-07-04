@@ -1,0 +1,23 @@
+ALTER TABLE `{DB_TABLE_PREFIX}items` CHANGE `itemid` `itemid` MEDIUMINT( 8 ) UNSIGNED NOT NULL AUTO_INCREMENT ,
+CHANGE `uid` `uid` MEDIUMINT( 8 ) UNSIGNED NOT NULL ,
+CHANGE `account` `account` CHAR( 15 ) NOT NULL ,
+CHANGE `content` `content` VARCHAR( 255 ) NOT NULL ,
+CHANGE `dateline` `dateline` INT( 10 ) UNSIGNED NOT NULL ,
+CHANGE `digg` `digg` MEDIUMINT( 8 ) UNSIGNED NOT NULL DEFAULT '0',
+CHANGE `reply` `reply` MEDIUMINT( 5 ) UNSIGNED NOT NULL DEFAULT '0';
+ALTER TABLE `{DB_TABLE_PREFIX}reply` CHANGE `rid` `rid` MEDIUMINT( 8 ) NOT NULL AUTO_INCREMENT ,
+CHANGE `replyto` `replyto` MEDIUMINT( 8 ) UNSIGNED NOT NULL ,
+CHANGE `uid` `uid` MEDIUMINT( 8 ) NOT NULL ,
+CHANGE `account` `account` VARCHAR( 15 ) NOT NULL ,
+CHANGE `content` `content` VARCHAR( 255 ) NOT NULL ,
+CHANGE `dateline` `dateline` INT( 10 ) UNSIGNED NOT NULL;
+ALTER TABLE `{DB_TABLE_PREFIX}broadcast` CHANGE `bid` `bid` MEDIUMINT( 8 ) NOT NULL AUTO_INCREMENT ,
+CHANGE `sortid` `sortid` MEDIUMINT( 8 ) NOT NULL DEFAULT '0',
+CHANGE `content` `content` VARCHAR( 255 ) NOT NULL;
+ALTER TABLE `{DB_TABLE_PREFIX}broadcast` ADD `gourl` VARCHAR( 255 ) DEFAULT '#' NOT NULL;
+DROP TABLE IF EXISTS `{DB_TABLE_PREFIX}setting`;
+CREATE TABLE IF NOT EXISTS `{DB_TABLE_PREFIX}setting` (
+  `setname` varchar(255) NOT NULL default '',
+  `data` text NOT NULL,
+  PRIMARY KEY  (`setname`)
+) TYPE=MyISAM {setCharset} ;

@@ -1,0 +1,340 @@
+@CHARSET "UTF-8";
+/**
+ * @purpose 后台样式表
+ * @author tortoise or sigong
+ * @email chixiaosheng05@163.com
+ * @QQ 255979
+ * @link http://www.flexsns.com
+ * 
+ * @notice 
+ * 
+ * @createDate 2009.4.28
+ * @modified 2009.4.29
+ * 
+ */
+ 
+body{ 
+	width:100%; 
+	height:100%; 
+	margin:0; 
+	background:#e7f1fd;
+	font-size:12px;
+	color:#003366; 
+	font-family:Arial, Helvetica, sans-serif;
+	}
+a{
+	color:#003366; 
+	text-decoration: none;
+	}
+	a:hover{
+	color:#FF6600; 
+	text-decoration: none;
+	}
+form{margin:0;padding:0}	
+.header{
+	width:100%;
+	height:70px;
+	background:url(./../images/header_bg.gif) repeat-x;
+	border-bottom:1px solid #99ccff;
+	clear:both;
+	}
+	.header_main{
+	width:970px;
+	height:100%;
+	margin:0 auto;
+	padding:10px 0;
+	}
+	
+.logo{
+	height:50px;
+	width:150px;
+	float:left;
+	}
+	.logo a{
+		display:block;
+		width:150px;
+		height:50px;
+		background:url(./../images/logo.gif) no-repeat;
+		}
+		
+.main_wrap{
+	width:100%;
+	height:100%;
+	}
+	.footer{
+		margin:20px auto;
+		width:950px;
+		height:30px;
+		border-top:1px dashed #cdddff;
+		background:#f1f7fe;
+		text-align:left;
+		padding-left:20px;
+		line-height:30px;
+	}
+	.footer a{margin: 0 5px;}
+	.main{
+		margin:20px auto;
+		width:970px;
+		height:100%;
+		}
+		.main_main{
+			margin:20px 0 0 0;
+			clear:both;
+		}
+			
+			.listTitle, .listContent, .listPage{
+				background:#f1f7fe;
+				line-height:30px;
+				border:1px solid #cdddff;
+				clear:both;
+				list-style:none;
+				width:100%;
+				height:30px;
+				margin:0px;
+				padding:0px;
+			}
+			.listContent{
+				border-top:none;
+			}
+			.listTitle{
+				background:#eaf0f6;
+			}
+			.listTitle li,.main_main  .listContent li{
+				height:28px;
+				float:left;
+				border:1px #ffffff solid;
+				border-left:none;
+				overflow:hidden;
+			}
+				.listFirstItem{
+					border-left:1px #ffffff solid;
+				}
+				
+				.itemContent{
+					width:500px;
+					padding:0px 10px;
+				}
+				.itemDate{
+					text-align:center;
+					width:150px;
+				}
+				.itemAuthor{
+					text-align:center;
+					width:150px;
+				}
+				.itemCtrl{
+					text-align:center;
+					width:145px;
+				}
+				
+			.listPage{
+				background:none;
+				border:none;
+				margin:10px 0px;
+			}
+				.listPage li{
+					float:left;
+					margin-right:10px;
+					}
+				.listPage a{
+					display:block;
+					width:20px;
+					height:20px;
+					line-height:20px;
+					text-align:center;
+					border:1px solid #cdddff;
+					background:#e7f1fd;
+					}
+					.listPage a:hover{
+						background:#003366;
+						color:#ffffff;
+						border:1px solid #000033;
+						}
+					
+		.changeTab{
+				background:#f1f7fe;
+				line-height:30px;
+				border:1px solid #cdddff;
+				clear:both;
+				list-style:none;
+				width:100%;
+				height:30px;
+				margin:0px;
+				padding:0px;
+			}
+			.changeTab .tab{
+				height:28px;
+				clear:both;
+				border:1px #ffffff solid;
+				overflow:hidden;
+				padding:0;
+				cursor:pointer;
+			}
+			.changeTab .tab a{
+				padding:0 10px;
+				display:block;
+				height:100%;
+				padding-left:20px;
+				background:url(./../images/arrowOut.gif) no-repeat 5px center #f1f7fe;
+			}
+			.changeTab .tab a:hover{
+				color:#003366; 
+				background:#e0ecfa;
+				background:url(./../images/arrowOver.gif) no-repeat 5px center #eaf0f6;
+			}
+			
+		.listFormBlock{clear:both;margin-bottom:10px;}
+		.listFormContainer{
+			clear:both;
+		}
+		.listForm{
+				background:#f1f7fe;
+				line-height:40px;
+				border:1px solid #cdddff;
+				border-top:none;
+				clear:both;
+				list-style:none;
+				width:100%;
+				height:40px;
+				margin:0px;
+				padding:0px;
+			}
+			.listForm li{
+				overflow:visible;
+				float:left;
+			}
+			
+		.listFormName{
+			padding:0 10px;
+			height:40px;
+			line-height:40px;
+			width:200px;
+			font-weight:bold;
+			border-right:1px solid #cdddff;
+		}
+		.listFormValue{
+			height:40px;
+			line-height:40px;
+			font-weight:bold;
+			border:none;
+			padding: 0 0 0 20px;
+			overflow-y:hidden;
+		}
+		.inputText{
+			width:270px;
+			height:20px;
+		}
+		.listFormInfo{
+			color:#666666;margin-left:20px;
+		}
+		.listFormCtrl{
+			height:40px;
+			line-height:40px;
+			padding: 0 0 0 20px;
+		}
+		.listFormCtrl .submit{ 
+			color:#ffffff;
+			border:1px solid #cdddff; 
+			height:25px;
+			line-height:25px;
+			background:#003366;
+		}
+		
+		.menu{
+			width:100%;
+			height:30px;
+			clear:both;
+			}
+			.menu ul{
+				list-style:none;
+				width:100%;
+				height:30px;
+				margin:0;
+				padding:0;
+			}
+			.menu li{
+				float:left;
+				margin:0 10px 0 0;
+				font-size:14px;
+			}
+			.menu li a{
+				width:140px;
+				height:40px;
+				background:#f1f7fe;
+				border:1px solid #cdddff;
+				display:block;
+				text-align:center;
+				vertical-align:middle;
+				line-height:40px;
+			}
+				.menu li a:hover, .menu .hover{
+					background:#003366;
+					border:1px solid #000033;
+					color:#ffffff;
+				}
+		
+		.messageWrap{
+				background:#f1f7fe;
+				border:1px solid #cdddff;
+				width:100%;
+				overflow-y:visible;
+			}
+			.messageMain{
+				clear:both;
+				list-style:none;
+				padding:0px;
+				margin:10px;
+				padding:10px;
+			}
+				.messageMain li{
+					clear:both;
+					float:none;
+				}
+				
+				.messageMain .subject
+				{
+					color:#ff6600;
+					font-weight:bold;
+					font-size:16px;
+					margin-bottom:15px;
+					height:16px;
+					line-height:16px;
+				}
+					.messageMain .subject img{
+						float:left;
+						margin-right:10px;
+					}
+					
+				.messageMain .message
+				{
+					font-weight:normal;
+					font-sze:12px;
+					list-style:square inside;
+				}
+				.messageMain .link
+				{
+					margin-top:15px;
+				}
+					.messageMain .link a
+					{
+						color:#ffffff;
+						border:1px solid #cdddff; 
+						height:25px;
+						line-height:25px;
+						background:#003366;
+						padding:0px 10px;
+						display:block;
+						width:80px;
+						text-align:center;
+					}
+.skyVersion{
+		padding-top:15px;
+		color:#ffffff;
+		float:right;
+		}
+.posting{font-weight:bold;line-height:100%;}	
+.warning{color:red;font-weight:bold;}
+.highLightA{color:#003366;font-weight:bold;padding:0 5px;}
+.infoText{color:#336699;margin-left:20px;}
+.hiddenContent{width:0px; height:0px; display:none}
+				

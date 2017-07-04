@@ -1,0 +1,34 @@
+.mp_wrap{width:960px;margin:0px auto;margin-top:10px;}
+.mp_nav{width:960px;height:28px;border-bottom:4px solid #577ea9;}
+.mp_nav ul{height:28px;}
+.mp_nav ul li{float:left;height:28px;}
+.mp_nav ul li a{display:block;height:28px;background-image:url(../images/phone/mp_nav.png);}
+.mp_nav ul li.li1 a{width:86px;background-position:0px 0px;}
+.mp_nav ul li.li1 a:hover,.mp_nav ul li.li1 a.current{background-position:0px -28px;}
+.mp_nav ul li.li2 a{width:86px;background-position:-86px 0px;}
+.mp_nav ul li.li2 a:hover,.mp_nav ul li.li2 a.current{background-position:-86px -28px;}
+.mp_nav ul li.li3 a{width:138px;background-position:-172px 0px;}
+.mp_nav ul li.li3 a:hover,.mp_nav ul li.li3 a.current{background-position:-172px -28px;}
+.mp_nav ul li.li4 a{width:89px;background-position:-310px 0px;}
+.mp_nav ul li.li4 a:hover,.mp_nav ul li.li4 a.current{background-position:-310px -28px;}
+.mp_nav ul li.li5 a{width:89px;background-position:-399px 0px;}
+.mp_nav ul li.li5 a:hover,.mp_nav ul li.li5 a.current{background-position:-399px -28px;}
+.mp_nav ul li.li6 a{width:89px;background-position:-487px 0px;}
+.mp_nav ul li.li6 a:hover,.mp_nav ul li.li6 a.current{background-position:-487px -28px;}
+.mp_m9{height:514px;width:960px;background:url(../images/phone/m9_bg.jpg) left top no-repeat;}
+.mp_m9 .links{margin-left:510px;margin-top:346px;height:43px;width:420px;float:left;_display:inline}
+.mp_m9 a{height:43px;width:125px;margin-right:15px;display:block;float:left;}
+.mp_iphone{height:514px;width:960px;background:url(../images/phone/iphone_bg.jpg) left top no-repeat;}
+.mp_iphone .links{margin-left:485px;margin-top:348px;height:60px;width:170px;float:left;_display:inline}
+.mp_iphone a{height:60px;width:169px;margin-right:15px;display:block;float:left;}
+.mp_ipad{height:514px;width:960px;background:url(../images/phone/ipad_bg.jpg) left top no-repeat;}
+.mp_ipad .links{margin-left:513px;margin-top:336px;height:60px;width:169px;float:left;_display:inline}
+.mp_ipad a{height:60px;width:169px;margin-right:15px;display:block;float:left;}
+.mp_pad{height:514px;width:960px;background:url(../images/phone/pad_bg.jpg) left top no-repeat;}
+.mp_pad .links{margin-left:509px;margin-top:342px;height:52px;width:420px;float:left;_display:inline}
+.mp_pad a{height:52px;width:164px;margin-right:26px;display:block;float:left;}
+.mp_m8{height:514px;width:960px;background:url(../images/phone/m8_bg.jpg) left top no-repeat;}
+.mp_m8 .links{margin-left:509px;margin-top:342px;height:52px;width:420px;float:left;_display:inline}
+.mp_m8 a{height:52px;width:164px;margin-right:26px;display:block;float:left;}
+.mp_mphone{height:514px;width:960px;background:url(../images/phone/mphone_bg.jpg) left top no-repeat;}
+.mp_iframe{margin-left:110px;margin-top:67px;float:left;_display:inline;}

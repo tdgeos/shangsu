@@ -1,0 +1,38 @@
+DROP TABLE IF EXISTS `{DB_TABLE_PREFIX}broadcast`;
+CREATE TABLE IF NOT EXISTS `{DB_TABLE_PREFIX}broadcast` (
+  `bid` mediumint(8) NOT NULL auto_increment,
+  `sortid` mediumint(8) NOT NULL default '0',
+  `content` varchar(255) NOT NULL,
+  `gourl` varchar(255) NOT NULL default '#',
+  PRIMARY KEY  (`bid`)
+) ENGINE=MyISAM {setCharset} AUTO_INCREMENT=1 ;
+DROP TABLE IF EXISTS `{DB_TABLE_PREFIX}items`;
+CREATE TABLE IF NOT EXISTS `{DB_TABLE_PREFIX}items` (
+  `itemid` mediumint(8) unsigned NOT NULL auto_increment,
+  `uid` mediumint(8) unsigned NOT NULL,
+  `account` char(15) NOT NULL,
+  `content` varchar(255) NOT NULL,
+  `dateline` int(10) unsigned NOT NULL,
+  `digg` mediumint(8) unsigned NOT NULL default '0',
+  `reply` mediumint(5) unsigned NOT NULL default '0',
+  PRIMARY KEY  (`itemid`),
+  KEY `uid` (`uid`)
+) ENGINE=MyISAM {setCharset} AUTO_INCREMENT=1 ;
+DROP TABLE IF EXISTS `{DB_TABLE_PREFIX}reply`;
+CREATE TABLE IF NOT EXISTS `{DB_TABLE_PREFIX}reply` (
+  `rid` mediumint(8) NOT NULL auto_increment,
+  `replyto` mediumint(8) unsigned NOT NULL,
+  `uid` mediumint(8) NOT NULL,
+  `account` varchar(15) NOT NULL,
+  `content` varchar(255) NOT NULL,
+  `dateline` int(10) unsigned NOT NULL,
+  PRIMARY KEY  (`rid`),
+  KEY `uid` (`uid`),
+  KEY `replyto` (`replyto`)
+) ENGINE=MyISAM {setCharset} AUTO_INCREMENT=1 ;
+DROP TABLE IF EXISTS `{DB_TABLE_PREFIX}setting`;
+CREATE TABLE IF NOT EXISTS `{DB_TABLE_PREFIX}setting` (
+  `setname` varchar(255) NOT NULL default '',
+  `data` text NOT NULL,
+  PRIMARY KEY  (`setname`)
+) TYPE=MyISAM {setCharset} ;
